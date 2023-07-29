@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form>
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre..."/>
+
+            <div>
+                Email:
+                <input type="email" />
+            </div>
+
+            <div>
+                Password:
+                <input type="password" />
+            </div>
+
+            <div>
+                Radio:
+                <input type="radio" name="genero" id="hombre" value="hombre" />
+                <label for="hombre">Hombre</label>
+                
+                <input type="radio" name="genero" id="mujer" value="mujer" />
+                <label for="mujer">Mujer</label>
+                
+            </div>
+
+            <div>
+                Select:
+                <select>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                Checkbox:
+                <label >
+                    <input type="checkbox" /> Mayor de edad
+                </label>
+                <label >
+                    <input type="checkbox" /> Menor de edad
+                </label>
+            </div>
+
+            <div>
+                Color:
+                <input type="color" />
+            </div>
+
+            <div>
+                Fecha:
+                <input type="date" />
+            </div>
+
+            <div>
+                Archivos:
+                <input type="file" />
+            </div>
+
+            <div>
+                Imagen:
+                <input type="image" src="imagenes/Screenshot 2023-03-09 200627.png" width="50"/>
+            </div>
+
+            <div>
+                Oculto:
+                <input type="hidden" name="oculto" value="loquesea" />
+            </div>
+
+            <div>
+                Numero:
+                <input type="number" />
+            </div>
+
+            <div>
+                Rango:
+                <input type="range" name="rango"/>
+            </div>
+
+            <div>
+                Busqueda:
+                <input type="search" name="buscar"/>
+            </div>
+
+            <div>
+                Telefono:
+                <input type="tel" name="telefono" />
+            </div>
+
+            <div>
+                Hora:
+                <input type="time" />
+            </div>
+
+            <div>
+                Sitio web:
+                <input type="url" />
+            </div>
+
+            <div>
+                Progreso:
+                <progress max="100" value="45"></progress>
+            </div>
+
+            <div>
+                Metter:
+                <meter max="100" value="65"></meter>
+            </div>
+
+            <div>
+                Lista de datos:
+                <input list="frutas" name="fruta" />
+                <datalist id="frutas">
+                    <option value="manzana" />
+                    <option value="naranja" />
+                    <option value="pera" />
+                </datalist>
+            </div>
+
+        </fieldset>
+        
+
+        <label for="descripcion">Descripcion:</label>
+        <textarea name="" id="descripcion" cols="20" rows="5"></textarea>
+
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpiar" />
+    </form>
+
+    <h1>Validacion</h1>
+    <form>
+        <input type="text" required 
+               minlength="5"
+               maxlength="15"
+               pattern="[A-Za-z ]+"
+        />
+
+        <input type="number" required 
+               min="5"
+               max="20"
+        />
+
+        <input type="submit" value="enviar"/>
+    </form>
+
+</body>
+</html>

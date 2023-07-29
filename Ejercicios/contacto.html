@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../imagenes/Screenshot 2023-03-09 200140.png" />
+    <title>Ejercicio HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios HTML</h1>
+
+        <nav>
+            <!--Menu-->
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="multimedia.html">Multimedia</a>
+                </li>
+                <li>
+                    <a href="dieta.html">Dieta</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+        <section id="contacto">
+           <form action="">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" />
+                </div>
+
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" />
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" />
+                </div>
+
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" />
+                </div>
+
+                <div>
+                    <label for="genero">Genero</label>
+                    <select id="genero">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="motivo">Motivo</label>
+                    <textarea id="motivo" cols="30" rows="5"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" />
+           </form>
+        </section>
+        
+    </main>
+    <hr/>
+
+    <footer>
+        Proyecto de HTML con ejercicios de Victor Robles
+    </footer>
+</body>
+</html>
